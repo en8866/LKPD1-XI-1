@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+</head>
+<body>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          border: 2px solid #000000; /* Mengubah ketebalan garis table */
+        }
+        
+        td, th {
+          border: 2px solid #000000; /* Mengubah ketebalan garis td dan th */
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+        .harga {
+          justify-content: center;
+        }
+        </style>
+    <table>
+        <tr>
+          <th>Keterangan</th>
+
+          <th>Bersedia Membayar</th>
+        </tr>
+        <tr>
+          <td>Bersedia membayar Dana Sumbangan Pengembangunan (DSP) Sebesar Rp.8.500.000 dengan mekanisme Pembayaran Dana Sumbangan Pendidikan</td>
+          
+         
+          <td> <input type="radio" id="1" name="fav_language" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" id="1" name="fav_language" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" id="1" name="fav_language" value="3">
+            <label for="3">3</label><br></td>
+        </tr>
+        <tr>
+          <td>Bersedia Membayar Sumbangan penyelenggara pendidikan (SSP) secara rutin setiap bulan sebesar Rp.550.000 yang dibayarkan sebelum tanggal 10 setiap bulannya kecuali bulan Juli 2024.</td>
+          <td> <input type="checkbox" id="1" name="1" value="1">
+            <label for="1"> </label><br></td>
+        </tr>
+        <tr>
+          <td>Pembayaran lainnya <br>
+            Setelah Putra/Putri kami diterima di SMK Wikrama Bogor, Kami juga bersedia memberikan:
+            <br><br>
+            a. Wakaf pembangunan mesjid al-Ikram
+          </td>
+          <td class="harga"><form>
+            A.<br>
+            <input type="radio" id="1" name="1" value="1">
+            <label for="1">Rp.300.000</label>
+            <br>
+            <input type="radio" id="2" name="2" value="2">
+            <label for="2">Rp.500.000</label>
+            <br>
+            <input type="radio" id="3" name="3" value="3">
+            <label for="3">Rp.1.000.000</label>
+            <br>
+             <input type="radio" id="4" name="4" value="4">
+            <label for="4">Rp.2.000.000</label>
+            <br>
+            <input type="radio" id="5" name="5e" value="5">
+            <label for="5">Rp.5.000.000</label>
+            <br>
+            <input type="radio" id="5" name="5e" value="5">
+            <label for="5">>Rp.5.000.000 atau <label for="fname">Rp.</label>
+            <br>
+            <input type="number" id="fname" name="fname" value=""><br></label>
+          </td>
+          <tr>
+            <td>b. Zakat, infaq, dan shodaqoh secara rutin setiap bulan</td>
+            <td><label for="fname">B.</label><br>
+              <input type="number" id="fname" name="fname" value="Rp.20.000"><br></label></td>
+          </tr>
+        </tr>
+    </table>
+</body>
+</html>

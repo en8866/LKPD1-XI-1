@@ -1,0 +1,175 @@
+#hero {
+    height: 800px;
+    background-image: url("/landingpage-fix/image/ocean.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    width: 500px;
+    text-align: center;
+    background-color: #82e0fd;
+    box-shadow: 2px 4px 15px rgb(164, 205, 247);
+    border-radius: 5px;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+}
+
+.hero-content h1 {
+    color: white;
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: #82e0fd4f;
+}
+
+.hero-content p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.hero-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #66d6f8c0;
+    padding: 10px;
+    font-weight: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#highligh {
+    background: linear-gradient(0deg, #a0cbd8ee, #48cef7f1);
+    padding: 10px;
+}
+
+/* // */
+#highligh h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#place {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.place-content p {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.place-content strong {
+    color: rgb(2, 88, 145);
+}
+
+.place-content {
+    margin: 40px;
+}
+
+.place-content img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    object-fit: cover;
+}
+
+.promotion {
+    display: flex;
+    justify-content: center;
+}
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+ 

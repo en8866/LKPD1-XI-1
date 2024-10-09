@@ -1,0 +1,59 @@
+header {
+    position: static;
+}
+
+body {
+    background: linear-gradient(30deg, rgb(235, 243, 0), rgba(255, 0, 0, 0.829));
+}
+
+main li img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+main ul {
+    width: 1300px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 50px;
+}
+
+main li:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+
+main li {
+    display: flex;
+    background-color: rgb(255, 233, 133); /*ubah warna*/
+    border-radius: 5px; /*bentuk lebih simple*/
+    overflow: hidden;
+}
+
+.item-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.action {
+    text-align: right;
+}
+
+.action a {
+    text-decoration: none;
+    color: rgb(132, 162, 189);
+    text-align: right;
+    padding: 6px;
+}
+
+.action a:hover {
+    text-decoration: none;
+    color: rgb(71, 169, 255);
+    background-color: rgba(71, 169, 255, 0.144);
+    border-radius: 10px;
+}

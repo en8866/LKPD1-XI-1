@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar dan Opacity</title>
+    <style>
+        .image-preview {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* From Uiverse.io by KINGFRESS */ 
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #0c66ed;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+button span:nth-child(6) {
+  position: relative;
+}
+
+button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+button span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+  
+    </style>
+</head>
+<body>
+
+    <h1>Gambar dan Opacity</h1>
+
+    <label for="image-select">Pilih Gambar:</label>
+    <select id="image-select">
+        <option value="download.jpeg">Gambar 1</option>
+        <option value="download (2).jpeg">Gambar 2</option>
+        <option value="download (1).jpeg">Gambar 3</option>
+    </select>
+
+    <label for="opacity-select">Pilih Opacity:</label>
+    <select id="opacity-select">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+
+<button  id="submit-btn">
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Submit</span>
+</button>
+    <div>
+        <h3>Hasil</h3>
+        <div class="image-preview" id="result-image"></div> 
+    </div>
+
+    <script>
+        const imageSelect = document.getElementById('image-select');
+        const opacitySelect = document.getElementById('opacity-select');
+        const submitBtn = document.getElementById('submit-btn');
+        const resultImage = document.getElementById('result-image');
+
+        submitBtn.addEventListener('click', () => {
+            const selectedImage = imageSelect.value;
+            const selectedOpacity = opacitySelect.value;
+            resultImage.innerHTML = `<img src="${selectedImage}" alt="Gambar Hasil" style="opacity: ${selectedOpacity};">`; 
+        });
+    </script>
+
+</body>
+</html>
